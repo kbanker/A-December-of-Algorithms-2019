@@ -2,7 +2,7 @@ using System;
 
 class December1
 {
-  int sevenish_number(int pos)
+  static int sevenish_number(int pos)
   {
 
     int[] numbers = new int[2 * pos + 1];
@@ -33,7 +33,6 @@ class December1
 
   public static void Main(string[] args)
   {
-    December1 a = new December1();
-    Console.WriteLine(a.sevenish_number(15));
+    Console.WriteLine(sevenish_number(15));
   }
 }

@@ -2,7 +2,7 @@ using System;
 
 class December2
 {
-  bool IsValidNum(long cardNum)
+  static bool IsValidNum(long cardNum)
   {
     string numString = "" + cardNum;
     int s1 = 0;
@@ -41,10 +41,8 @@ class December2
 
   public static void Main(string[] args)
   {
-    December2 a = new December2();
-
     Console.Write("Input: ");
     long input = Convert.ToInt64(Console.ReadLine());
-    Console.WriteLine(a.IsValidNum(input));
+    Console.WriteLine(IsValidNum(input));
   }
 }
