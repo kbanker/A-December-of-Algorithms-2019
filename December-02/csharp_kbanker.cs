@@ -43,6 +43,7 @@ class December2
   {
     Console.Write("Input: ");
     long input = Convert.ToInt64(Console.ReadLine());
-    Console.WriteLine(IsValidNum(input));
+    string msg = (IsValidNum(input)) ? input + " passes the test" : input + " does not pass the test";
+    Console.WriteLine("Output: " + msg);
   }
 }
