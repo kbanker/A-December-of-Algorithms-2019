@@ -5,6 +5,9 @@ class December2
   static bool IsValidNum(long cardNum)
   {
     string numString = "" + cardNum;
+    char[] numCharArr = numString.ToCharArray();
+    Array.Reverse(numCharArr);
+    numString = new string(numCharArr);
     int s1 = 0;
     int s2 = 0;
     int[] evens = new int[numString.Length];
