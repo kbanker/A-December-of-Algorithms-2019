@@ -12,6 +12,8 @@ for i in range(n):
   pair = (int(inp[0]), inp[1].strip())
   q.append(pair)
 
+q = deque(sorted(q, key=lambda x: x[0]))
+
 k = input('Enter k: ')
 
 k_pair = [i for i in q if k in i]
