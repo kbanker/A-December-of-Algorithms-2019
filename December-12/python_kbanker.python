@@ -1,0 +1,15 @@
+import json
+
+locs_file = open('../src/res/JaSon.json')
+data = json.load(locs_file)
+
+start_loc = data['markers'][0]['location']
+end_loc = data['markers'][1]['location']
+
+#CHANGE FORMUILA FOR LAT AND LONG
+dist_x = (start_loc[0] - end_loc[0])**(2)
+dist_y = (start_loc[1] - end_loc[1])**(2)
+
+dist = (dist_x + dist_y) ** (1/2)
+
+print(dist)
